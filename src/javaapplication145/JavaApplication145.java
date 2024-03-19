@@ -6,11 +6,13 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.apache.commons.net.ftp.FTPClient;
+
 
 public class JavaApplication145 {
 
     public static void main(String[] args) throws ClassNotFoundException {
-
+        FTPClient ftpclien = new FTPClient();
         int puertoSocket = 10000;
         try {
             ServerSocket serverSocket = new ServerSocket(puertoSocket);
